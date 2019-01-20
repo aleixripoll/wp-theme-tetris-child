@@ -8,10 +8,12 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tetris-child
 */
 
-#wrap { width: 1290px; }
+body { background-image: url(images/bright_squares.png); }
 
-#header { position: relative; background: #111; margin-bottom: 30px; }
-#footer { background: #111; padding: 40px 40px 10px 40px; font-size: 0.9em; position: relative; }
+#wrap { width: 1298px; }
+
+#header { position: relative; background: none; margin-bottom: 30px; }
+#footer { background: #111; padding: 40px 40px 10px 40px; font-size: 0.9em; position: relative; border-radius: 10px; }
 
 #post { float: none; width: 80%; margin: 0 auto; }
 #post > article { font-size: 1.2em; text-align: justify; }
@@ -19,6 +21,10 @@ Text Domain: tetris-child
 #sidebar { display: none }
 .sidebar-bg { background: #fff; background-image: none !important; }
 #search-results-page { background: none; padding: 0; }
+
+.blog-entry {  border-radius: 10px; border: 1px dotted #999; }
+
+#page-heading {	border-radius: 20px; }
 
 /* per l'scale que fem mes a baix necessitem l'overflow */
 .blog-entry-thumbnail { overflow: hidden; max-height: 250px; }
@@ -28,26 +34,40 @@ Text Domain: tetris-child
 #post-thumbnail img { display: block;	width: 100%; max-height: 200px; object-fit: cover; filter: blur(2px) brightness(80%); }
 
 /* centrar logo */
-#logo { margin: auto; width: 100%; max-width: none; float: none; }
+#logo { margin: 20px auto; width: 100%; max-width: none; float: none; }
 #logo h1 a, #text-logo a { float: none;	font-weight: 300; text-transform: none; text-align: center; }
 
 /* centrar menu */
-#navigation { position: relative; margin: auto; width: 100%; right: 0; }
+#navigation { position: relative; margin: 20px auto; width: 100%; right: 0; font-size: 1.2em; }
 .sf-menu { display: inline-table; }
-#navigation .sf-menu li {	padding: 0px 10px; margin: 0 6px; color: #aaa; font-size: 1.1em; }
-#navigation .sf-menu a { display: inline; font-family: 'Open Sans', Helvetica, Arial, sans-serif; padding: 0 0 0 10px; }
+#navigation .sf-menu li {	padding: 0px 10px; margin: 0 6px; color: #222; font-size: 1.1em; }
+#navigation .sf-menu a { display: inline; font-family: 'Open Sans', Helvetica, Arial, sans-serif; padding: 0 0 0 10px; color: #333; }
 .menu-menu-principal-container { text-align: center; }
 #navigation .sf-menu > .current-menu-item {
 	background: #e73420;
 	color: #fff;
-	font-weight: bold;
+  border-radius: 10px;
 }
-.slicknav_nav { padding: 5px 20px; font-size: 1.1em; background: #111; }
+#navigation .sf-menu > .current-menu-item > a {
+  font-weight: 600;
+}
+#navigation .sf-menu > li > a:hover {
+	color:#e73420;
+}
+
+.slicknav_btn { border-radius: 5px; }
+/*.slicknav_menutxt { display: none }*/
+.slicknav_nav { padding: 5px 20px; font-size: 1.1em; background: none; margin-left: 10px; }
 .slicknav_nav a {
   display: inline-table;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   padding: 10px;
   font-size: 0.8em;
+  color: #222;
+}
+.slicknav_nav a:hover {
+	background: none; 
+	color: #e73420;
 }
 
 .blog-entry .entry-text { font-size: 14px; }
@@ -67,38 +87,11 @@ div.pp_default .pp_description { font-size: 1em; font-weight: 600; text-align: c
   text-align: center;
 }
 #text-logo a {
+  font-size: 1.1em;
   display: inline-block;
-  color: #ddd;
+  color: #222;
 }
 #text-logo a:hover {
-  color: #fff;
+  color: #444;
 }
 
-@media only screen and (max-width: 960px) {
-  #post-thumbnail {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 1301px) {
-  .footer-box {
-    width: 365px;
-  }
-
-  .blog-entry img {
-    transition: all 0.5s ease;
-  }
-
-  .blog-entry img:hover {
-    transform: scale(1.05);
-    /* override parent theme */
-    filter: brightness(100%);
-    opacity: 1;
-  }
-}
-
-@media only screen and (min-width: 960px) and (max-width: 1300px) {
-  #wrap {
-    width: 960px;
-  }
-}
