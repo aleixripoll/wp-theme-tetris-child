@@ -21,6 +21,7 @@ if ( is_singular() ) { ?>
 <?php } else { ?>
 
 	<article <?php post_class('blog-entry clearfix'); ?>>
+
 		<?php if ( has_post_thumbnail() ) : ?>
 			<div class="blog-entry-thumbnail">
 				<a href="<?php the_permalink(); ?>" title="<?php wpex_esc_title(); ?>"><?php the_post_thumbnail( 'wpex-entry' ); ?></a>
@@ -35,6 +36,8 @@ if ( is_singular() ) { ?>
 				<li><strong>Posted on:</strong> <?php echo get_the_date(); ?></li>
 				<!--<li><strong>By:</strong> <?php the_author_posts_link(); ?></li>   -->
 				<?php if(comments_open()) { ?><li class="comment-scroll"><?php comments_popup_link(__('0 Comments', 'tetris'), __('1 Comment', 'tetris'), __('% Comments', 'tetris'), 'comments-link' ); ?></li><?php } ?>
+				<li id="post-tags" class="blog-entry-cat"><?php the_category(' '); ?></li>
+	            <?php the_tags( '<li id="post-tags" class="blog-entry-tags">', '', '</li>' ); ?>
 			</ul><!-- /entry-meta -->
 		</div><!-- /entry-text -->
 	</article><!-- /blog-entry -->

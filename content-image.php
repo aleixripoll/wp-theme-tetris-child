@@ -34,7 +34,8 @@ if ( is_singular() ) { ?>
 			<ul class="entry-meta">
 				<li><strong>Posted on:</strong> <?php echo get_the_date(); ?></li>
 				<?php if(comments_open()) { ?><li class="comment-scroll"><?php comments_popup_link(__('0 Comments', 'tetris'), __('1 Comment', 'tetris'), __('% Comments', 'tetris'), 'comments-link' ); ?></li><?php } ?>
-			</ul><!-- .entry-meta -->
+				<li id="post-tags" class="blog-entry-cat"><?php the_category(' '); ?></li>
+	            <?php the_tags( '<li id="post-tags" class="blog-entry-tags">', '', '</li>' ); ?>
 		</div><!-- .entry-text -->
 	</article><!-- .blog-entry -->
 

@@ -16,7 +16,7 @@
     .blog-entry img:hover {
       transform: scale(1.05);
       /* override parent theme */
-      filter: brightness(100%);
+      filter: brightness(90%) saturate(0%);
       opacity: 1;
     }
   }
