@@ -8,11 +8,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tetris-child
 */
 
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
 body { background-image: url(images/bright_squares.png); }
 
 #wrap { width: 1298px; }
 
-#header { position: relative; background: none; margin-bottom: 30px; }
+#header { position: relative; background: none; margin-bottom: 30px; margin-top: 50px; font-family: 'Abel', sans-serif; }
+#header > h2 > a {  font-family: 'Abel', sans-serif;  }
 #footer { background: none; padding: 40px 40px 10px 40px; font-size: 0.9em; position: relative; border-radius: 10px; }
 #footer input[type="search"] { font-size: 1.1em; background-color: #fff; border-color: #bbb; color: #666; background-image: url("./images/search.png"); }
 .footer-widget h4 {	color: #111; border-bottom: 1px solid #999; }
@@ -35,7 +38,10 @@ body { background-image: url(images/bright_squares.png); }
 #search-results-page { background: none; padding: 0; }
 
 .blog-entry {  border-radius: 10px; border: 1px dotted #999; }
-.blog-entry .entry-text { font-size: 14px; }
+.blog-entry .entry-text { font-size: 1.1em; }
+.blog-entry h2 { font-size: 1.3rem; font-family: Abel; }
+.blog-entry h2 a { color: #222; }
+.blog-entry h2 a:hover { color: #e73420; }
 
 #page-heading {	border-radius: 20px; }
 
@@ -53,8 +59,8 @@ body { background-image: url(images/bright_squares.png); }
 /* centrar menu */
 #navigation { position: relative; margin: 20px auto; width: 100%; right: 0; font-size: 1.2em; }
 .sf-menu { display: inline-table; }
-#navigation .sf-menu li {	padding: 0px 10px; margin: 0 6px; color: #222; font-size: 1.1em; }
-#navigation .sf-menu a { display: inline; font-family: 'Open Sans', Helvetica, Arial, sans-serif; padding: 0 0 0 10px; color: #333; }
+#navigation .sf-menu li {	padding: 2px 10px; margin: 0 6px; color: #666; font-size: 1.1em; }
+#navigation .sf-menu a { display: inline; font-family: 'Open Sans', Helvetica, Arial, sans-serif; padding: 0 0 0 10px; color: #666; }
 .menu-menu-principal-container { text-align: center; }
 #navigation .sf-menu > .current-menu-item {
 	background: #e73420;
@@ -63,6 +69,11 @@ body { background-image: url(images/bright_squares.png); }
 }
 #navigation .sf-menu > .current-menu-item > a {
   font-weight: 600;
+}
+#navigation .sf-menu > li > a {
+	font-family: Abel;
+	font-size: 1.2em;
+	color: #666;
 }
 #navigation .sf-menu > li > a:hover {
 	color:#e73420;
@@ -79,9 +90,9 @@ body { background-image: url(images/bright_squares.png); }
 .slicknav_nav { padding: 5px 20px; font-size: 1.1em; background: none; margin-left: 10px; }
 .slicknav_nav a {
   display: inline-table;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Abel', sans-serif;
   padding: 10px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   color: #222;
 }
 .slicknav_nav a:hover {
@@ -97,12 +108,13 @@ div.pp_default .pp_description { font-size: 1em; font-weight: 600; text-align: c
   text-align: center;
 }
 #text-logo a {
-  font-size: 1.1em;
+  font-size: 1.5em;
   display: inline-block;
   color: #222;
+  font-family: Abel;
 }
 #text-logo a:hover {
-  color: #444;
+  color: #e73420;
 }
 
 /*.blog-entry-tags {

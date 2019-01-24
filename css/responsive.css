@@ -2,6 +2,9 @@
     #post-thumbnail {
       display: none;
     }
+    #header { margin-top: 0; }
+    #text-logo a { font-size: 1.1em; }
+
   }
   
   @media only screen and (min-width: 1301px) {
@@ -16,14 +19,13 @@
     .blog-entry img:hover {
       transform: scale(1.05);
       /* override parent theme */
-      filter: brightness(90%) saturate(0%);
+      filter: brightness(100%) saturate(100%);
       opacity: 1;
     }
   }
   
   @media only screen and (min-width: 960px) and (max-width: 1300px) {
     #wrap { width: 968px }
-
   }
   
   @media only screen and (min-width:768px) and (max-width:959px) { 
