@@ -38,15 +38,15 @@ body { background-image: url(images/bright_squares.png); }
 #search-results-page { background: none; padding: 0; }
 
 .blog-entry {  border-radius: 10px; border: 1px dotted #999; }
-.blog-entry .entry-text { font-size: 1.1em; }
-.blog-entry h2 { font-size: 1.3rem; font-family: Abel; }
+.blog-entry .entry-text { font-size: 1.1em; padding: 15px 20px; }
+/*.blog-entry h2 { font-size: 1.3rem; font-family: Abel; }*/
 .blog-entry h2 a { color: #222; }
 .blog-entry h2 a:hover { color: #e73420; }
 
 #page-heading {	border-radius: 20px; }
 
 /* per l'scale que fem mes a baix necessitem l'overflow */
-.blog-entry-thumbnail { overflow: hidden; max-height: 250px; position: relative; }
+.blog-entry-thumbnail { overflow: hidden; max-height: 250px; position: relative; border-bottom: solid 1px #bbb; }
 .blog-entry-thumbnail > a > img { filter: brightness(100%) saturate(100%);; }
 
 #post-thumbnail {	margin: 0; text-align: center; }
@@ -99,6 +99,7 @@ body { background-image: url(images/bright_squares.png); }
 	background: none; 
 	color: #e73420;
 }
+.slicknav_menutxt { font-family: 'Open Sans', sans-serif; }
 
 input[type="search"] { font-size: 1em; }
 
