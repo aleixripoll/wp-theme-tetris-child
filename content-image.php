@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	
 if ( is_singular() ) { ?>
 
-	<div id="post-thumbnail"><a href="<?php echo esc_url( wp_get_attachment_url( get_post_thumbnail_id() ) ); ?>" tile="<?php _e( 'View Full-Size', 'tetris' ); ?>" class="prettyphoto-link"><?php the_post_thumbnail( 'wpex-post' ); ?></a></div>
+	<!--<div id="post-thumbnail"><a href="<?php echo esc_url( wp_get_attachment_url( get_post_thumbnail_id() ) ); ?>" tile="<?php _e( 'View Full-Size', 'tetris' ); ?>" class="prettyphoto-link"><?php the_post_thumbnail( 'wpex-post' ); ?></a></div>-->
 	
 <?php } else { ?>
 
@@ -33,7 +33,7 @@ if ( is_singular() ) { ?>
 			<?php wpex_excerpt(); ?>
 			<ul class="entry-meta">
 				<li><strong>Posted on:</strong> <?php echo get_the_date(); ?></li>
-				<?php if(comments_open()) { ?><li class="comment-scroll"><?php comments_popup_link(__('0 Comments', 'tetris'), __('1 Comment', 'tetris'), __('% Comments', 'tetris'), 'comments-link' ); ?></li><?php } ?>
+				<!--<?php if(comments_open()) { ?><li class="comment-scroll"><?php comments_popup_link(__('0 Comments', 'tetris'), __('1 Comment', 'tetris'), __('% Comments', 'tetris'), 'comments-link' ); ?></li><?php } ?>-->
 				<li id="post-tags" class="blog-entry-cat"><?php the_category(' '); ?></li>
 	            <?php the_tags( '<li id="post-tags" class="blog-entry-tags">', '', '</li>' ); ?>
 		</div><!-- .entry-text -->

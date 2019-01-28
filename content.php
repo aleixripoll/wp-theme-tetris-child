@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( is_singular() ) { ?>
 
-	<div id="post-thumbnail"><?php the_post_thumbnail( 'wpex-post' ); ?></div>
+	<!--<div id="post-thumbnail"><?php the_post_thumbnail( 'wpex-post' ); ?></div>-->
 
 <?php } else { ?>
 
@@ -35,7 +35,7 @@ if ( is_singular() ) { ?>
 			<ul class="entry-meta">
 				<li><strong>Posted on:</strong> <?php echo get_the_date(); ?></li>
 				<!--<li><strong>By:</strong> <?php the_author_posts_link(); ?></li>   -->
-				<?php if(comments_open()) { ?><li class="comment-scroll"><?php comments_popup_link(__('0 Comments', 'tetris'), __('1 Comment', 'tetris'), __('% Comments', 'tetris'), 'comments-link' ); ?></li><?php } ?>
+				<!--<?php if(comments_open()) { ?><li class="comment-scroll"><?php comments_popup_link(__('0 Comments', 'tetris'), __('1 Comment', 'tetris'), __('% Comments', 'tetris'), 'comments-link' ); ?></li><?php } ?>-->
 				<li id="post-tags" class="blog-entry-cat"><?php the_category(' '); ?></li>
 	            <?php the_tags( '<li id="post-tags" class="blog-entry-tags">', '', '</li>' ); ?>
 			</ul><!-- /entry-meta -->
